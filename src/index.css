@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+
+:root {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 62.5%;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-width: 320px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+input, button {
+  font-family: 'Reem Kufi', sans-serif;
+}
