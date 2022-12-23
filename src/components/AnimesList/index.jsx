@@ -1,23 +1,8 @@
-import { useEffect, useState } from 'react';
 import { AnimeListContainer, AnimeInfo, Cat } from './styles';
 
 import Block from '../Block';
 
-const AnimeList = () => {
-    const [list, setList] = useState(false);
-
-    useEffect(() => {
-        async function getData() {
-            const response = await fetch("https://api.jikan.moe/v4/anime");
-            const data = await response.json();
-
-            console.log(data);
-
-            setList(data);
-        }
-        getData();
-    }, []);
-
+const AnimeList = ({ list }) => {
     return ( 
         <AnimeListContainer>
             {list.data?.map(anime => (
@@ -35,7 +20,7 @@ const AnimeList = () => {
                         
                         <div className='cats-container'>
                             {anime.genres.map(cat => 
-                                <Cat>{cat.name}</Cat>
+                                <Cat key={cat.name}>{cat.name}</Cat>
                             )}
                         </div>
                     </div>

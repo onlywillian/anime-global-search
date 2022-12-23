@@ -59,7 +59,6 @@ export const AnimeInfo = styled.div`
             overflow: hidden; // Removendo barra de rolagem
             text-overflow: ellipsis; // Adicionando "..." ao final
             display: -webkit-box;
-            -webkit-line-clamp: 4; // Quantidade de linhas
             -webkit-box-orient: vertical; 
         }
 
@@ -73,7 +72,8 @@ export const AnimeInfo = styled.div`
 `
 
 export const Cat = styled.div`
-    background: white;
+    background: black;
+    color: white;
     border-radius: 10px;
     padding: 10px;
     cursor: pointer;
