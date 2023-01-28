@@ -1,8 +1,12 @@
+import Header from "./components/Header"
+import AnimeContainer from "./components/AnimeContainer"
+
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">Hello</h1>
-    </div>
+    <div className="App h-screen">
+      <Header />
+      <AnimeContainer />
+    </div> 
   )
 }
 
