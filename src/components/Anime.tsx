@@ -9,7 +9,7 @@ const Anime = ({img, title, desc, genres, score, episodes}: any) => {
                 {score}
             </div>
 
-            {/* O conteúdo */}
+            {/* Conteúdo */}
             <img src={img} alt="Anime Cover" className="w-40"/>
             <div className="ml-8 mt-4">
                 <h3 className="text-2xl font-semibold">{title}</h3>
